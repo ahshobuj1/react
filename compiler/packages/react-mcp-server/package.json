@@ -6,9 +6,9 @@
     "react-mcp-server": "./dist/index.js"
   },
   "scripts": {
-    "build": "rimraf dist && tsup",
+    "build": "node init && rimraf dist && tsup",
     "test": "echo 'no tests'",
-    "dev": "concurrently --kill-others -n build,inspect \"yarn run watch\" \"wait-on dist/index.js && yarn run inspect\"",
+    "dev": "node init && concurrently --kill-others -n build,inspect \"yarn run watch\" \"wait-on dist/index.js && yarn run inspect\"",
     "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
     "watch": "yarn build --watch"
   },

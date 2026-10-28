@@ -6,7 +6,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup",
+    "build": "node init && rimraf dist && tsup",
     "test": "jest src",
     "watch": "yarn build --watch"
   },

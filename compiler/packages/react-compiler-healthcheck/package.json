@@ -6,7 +6,7 @@
     "react-compiler-healthcheck": "dist/index.js"
   },
   "scripts": {
-    "build": "rimraf dist && tsup",
+    "build": "node init && rimraf dist && tsup",
     "test": "echo 'no tests'",
     "watch": "yarn build --watch"
   },

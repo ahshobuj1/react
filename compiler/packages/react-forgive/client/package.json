@@ -5,7 +5,7 @@
   "description": "Experimental LSP client",
   "license": "MIT",
   "scripts": {
-    "build": "echo 'no build'",
+    "build": "node init && echo 'no build'",
     "test": "echo 'no tests'"
   },
   "repository": {

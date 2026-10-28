@@ -10,7 +10,7 @@
     "!*.tsbuildinfo"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "watch": "tsc --watch",
     "snap": "yarn workspace snap run snap",
     "snap:build": "yarn workspace snap run build",
