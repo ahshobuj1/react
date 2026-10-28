@@ -35,10 +35,10 @@
     ]
   },
   "scripts": {
-    "build": "yarn run compile",
-    "build:compiler": "yarn workspace babel-plugin-react-compiler build --dts",
+    "build": "node init && yarn run compile",
+    "build:compiler": "node init && yarn workspace babel-plugin-react-compiler build --dts",
     "compile": "rimraf dist && concurrently -n server,client \"scripts/build.mjs -t server\" \"scripts/build.mjs -t client\"",
-    "dev": "yarn run package && yarn run install-ext",
+    "dev": "node init && yarn run package && yarn run install-ext",
     "install-ext": "code --install-extension react-forgive-0.0.0.vsix",
     "lint": "echo 'no tests'",
     "package": "rm -f react-forgive-0.0.0.vsix && vsce package --yarn",

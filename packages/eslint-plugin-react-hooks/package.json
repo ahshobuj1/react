@@ -21,7 +21,7 @@
     "react"
   ],
   "scripts": {
-    "build:compiler": "cd ../../compiler && yarn workspace babel-plugin-react-compiler build",
+    "build:compiler": "node init && cd ../../compiler && yarn workspace babel-plugin-react-compiler build",
     "test": "yarn build:compiler && jest",
     "typecheck": "tsc --noEmit"
   },

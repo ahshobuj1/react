@@ -9,7 +9,7 @@
     "!*.tsbuildinfo"
   ],
   "scripts": {
-    "build": "rimraf dist && tsup",
+    "build": "node init && rimraf dist && tsup",
     "test": "./scripts/link-react-compiler-runtime.sh && yarn snap:ci",
     "jest": "yarn build && ts-node node_modules/.bin/jest",
     "snap": "yarn workspace snap run snap",
