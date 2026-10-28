@@ -7,7 +7,7 @@
     "jiti": "^2.4.2"
   },
   "scripts": {
-    "build": "node build.mjs && yarn",
+    "build": "node init && node build.mjs && yarn",
     "lint": "tsc --noEmit && eslint index.js --report-unused-disable-directives"
   },
   "devDependencies": {

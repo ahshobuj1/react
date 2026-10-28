@@ -3,7 +3,7 @@
   "name": "react-devtools-cdt-mcp-fixture",
   "version": "0.0.0",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js"
+    "start": "node init && cross-env NODE_ENV=development webpack serve --config webpack.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
